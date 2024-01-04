@@ -12,7 +12,8 @@ import time
 from io import BytesIO
 
 class Gemini:
-    apikey ="" genai.configure(api_key=apikey)
+    apikey ="" 
+genai.configure(api_key=apikey)
     def ISLA(prompt):
         model = genai.GenerativeModel('gemini-pro')
         response = model.generate_content(prompt)
